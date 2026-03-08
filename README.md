@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Lumina — Premium Landing Page
 
-## Getting Started
+A high-performance, GPU-accelerated landing page built with Next.js, Three.js, and Tailwind CSS. Features a real-time WebGL shader animation as the background with a premium black & white design.
 
-First, run the development server:
+![Full Page Preview](public/readme/full-page.png)
+
+## ✨ Features
+
+- **GPU-Accelerated Shader Background** — Real-time WebGL shader animation powered by Three.js
+- **Premium B&W Design** — Sophisticated monochrome aesthetic with glassmorphism effects
+- **Fully Responsive** — Optimized for all screen sizes
+- **Modular Architecture** — Clean component structure with separated layout, sections, and UI components
+- **TypeScript** — Fully typed codebase
+- **Performance Optimized** — Tree-shakable components and minimal bundle size
+
+## 📸 Screenshots
+
+![Hero Section](public/readme/header.png)
+
+![Features & Showcase](public/readme/header2.png)
+
+![Pricing](public/readme/pricing.png)
+
+![Footer](public/readme/footer.png)
+
+## 🛠 Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| **Next.js 16** | React framework with App Router |
+| **TypeScript** | Type safety |
+| **Tailwind CSS** | Utility-first styling |
+| **Three.js** | WebGL shader rendering |
+| **Lucide React** | Icon library |
+
+## 📁 Project Structure
+
+```
+app/
+  page.tsx              # Main page composition
+  layout.tsx            # Root layout
+  globals.css           # Global styles & animations
+components/
+  layout/
+    navbar.tsx           # Navigation bar
+    footer.tsx           # Footer
+  sections/
+    hero.tsx             # Hero section
+    features.tsx         # Feature cards grid
+    showcase.tsx         # Two-column showcase with stats
+    capabilities.tsx     # Capabilities section
+    faq.tsx              # FAQ grid
+    code-example.tsx     # Code example section
+    pricing.tsx          # Pricing cards
+    cta.tsx              # Call-to-action section
+  ui/
+    shader-animation.tsx # WebGL shader background
+    pricing-card.tsx     # Reusable pricing card
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+
+- npm or yarn
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/lumina-landing.git
+cd lumina-landing
+npm install
+```
+
+### Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm start
+```
 
-## Learn More
+## 📄 License
 
-To learn more about Next.js, take a look at the following resources:
+MIT License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Copyright (c) 2026 Guilherme de Castro
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-## Deploy on Vercel
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
